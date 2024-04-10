@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 2%;
+    
+}
+
+body{
+    width: 90%;
+    height: 90hv;
+    margin: auto;
+    background-color: #d4b996;
+}
+
+.Signature{
+    background-color: #864f37;
+    padding: 1%;
+    width: auto;
+    border-radius: 10px;
+    transform: scale(1.1);
+    
+}
+
+.Our{
+    font-size: xx-large;
+    color:#E4CFBB;
+    
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 2%;
+    grid-gap: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+    
+}
+
+.l{ grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #E4CFBB;
+    
+}
+
+.m{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color:  #E4CFBB;
+    
+}
+
+.c{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #E4CFBB;
+}
+
+.d{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-color: #E4CFBB;
+}
+
+.l1{ 
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background: url(light.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.m1{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background: url(median.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.c1{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    background: url(city.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.d1{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background: url(Dark.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+        
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* text-align: center; */
+    gap: 20px;
+}
+
+.box {
+    width: 250px;
+    justify-content: center;
+    border: 1px solid #928e8e;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+nav {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* reservation css */
+input[type=text]{
+    width: 30%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email]{
+    width: 30%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* navigation css */
+
+.nav ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    list-style: none;
+}
+
+.nav a {
+    background:#E4CFBB;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+  
+.nav a:hover {
+    background:  #794b37;
+    color: #fff;
+}
+
+#bean {
+    position: absolute;
+    left: 0;
+    top: 1080px;
+    width: 80px;
+    height: 80px;
+}
+
+header {
+    text-decoration: none;
+}

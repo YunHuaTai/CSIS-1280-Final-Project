@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CiTy Coffee</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+    <link href="java.js" rel="javascript">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+       header {
+          font-family: "Trirong", serif;
+        }
+    </style>
+    <script>
+        function Hello() {
+        alert('Hello ' + document.getElementById('firstname-input').value + '! We have received your reservation!');
+        }
+    </script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>CiTy Coffee</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="Home.html"> Home </a>
+            </li>
+            <li>
+                <a href="Coffee Beans.html"> Coffee Beans </a>
+            </li>
+            <li>
+                <a href="About Us.html"> About Us </a>
+            </li>
+            <li>
+                <a href="Reservation.html"> Reservation </a>
+            </li>
+        </ul>
+    </nav>
+
+    <h3>
+        Make a reservation at the studio to enjoy a cup of coffee
+        <br> and have a wonderful afternoon!
+    </h3>
+
+    <p> Come to the studio and enjoy a variety of coffee options, spending a perfect day under the bright sunshine. 
+        <br>Each group of guests can enjoy 2 hours of time, with magazines, Wi-Fi, and power outlets provided at the studio. 
+        <br>Leave your contact information to reserve a spot at the studio, and we will notify you once the reservation is confirmed. (content)
+    </p>
+
+    <form>
+    <label for="firstname-input">First name:</label>
+        <input id="firstname-input" type="text" name="FisrtName" required>
+        <br>
+        <label for="last name-input">Last Name:</label>
+        <input type="text" id="last name-input" name="LastName" required>
+        <br>
+        <label for="phonenumber-input">Phone Number:</label>
+        <input type="text" id="phonenumber-input" name="Phonenumber" pattern="\(d\d\d)\d\d\d-d\d\d\d"  placeholder="(xxx) xxx-xxxx" required>
+        <br>
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="Email" required>
+        <br>
+        <label for="date-input">Select Date</label>
+        <input type="date">
+        <br>
+        <label for="time-input">Select time</label>
+        <input type="time">
+        <br>
+        <h4>Comments</h4>
+        <textarea name="comments" id="comments" cols="60" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Sumbit" onclick="Hello()" >
+        <hr>
+    </form>
+
+
+
+    <br>
+    <br>
+    <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10427.3656154731!2d-122.9126894!3d49.2035681!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf3a710065f3a2f3f!2sDouglas%20College!5e0!3m2!1sen!2stw!4v1614778618594!5m2!1sen!2stw" width="600" height="450" allowfullscreen="allowfullscreen"></iframe>
+
+
+    
+
+
+
+
+
+</body>
+
+<footer>
+    <br><i>Copyright &copy; Yun-Hua, Tai &amp; Peng-Chen, Chiang</i>
+
+</footer>
+
+</html>

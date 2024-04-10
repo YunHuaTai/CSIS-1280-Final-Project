@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CiTy Coffee</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+    <link href="java.js" rel="javascript">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        
+    <style>
+    header {
+        font-family: "Trirong", serif;
+    }
+
+    * {
+        box-sizing: border-box;
+       
+    }
+
+
+    .timeline {
+        position: relative;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 85%;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+
+    .container {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+    }
+
+    .container::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #E4CFBB;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid #e5d6c8;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #e5d6c8;
+    }
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #e5d6c8;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #e5d6c8 transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+
+.content {
+  padding: 20px 30px;
+  background-color:#e5d6c8;
+  position: relative;
+  border-radius: 10px;
+  color: rgb(89, 22, 22)
+}
+
+.p {
+    border: #e5d6c8;
+    width: 73% ;
+    border-radius: 10px ;
+    color: white;
+    padding: 2%;
+    background-color: #794b37;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>CiTy Coffee</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="Home.html"> Home </a>
+            </li>
+            <li>
+                <a href="Coffee Beans.html"> Coffee Beans </a>
+            </li>
+            <li>
+                <a href="About Us.html"> About Us </a>
+            </li>
+            <li>
+                <a href="Reservation.html"> Reservation </a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="p">
+        <p>CiTy Coffee was founded in 2019 with a commitment to providing high-quality coffee beans and <br> a variety of options for customers to choose from. Different roasting methods, from light roast to dark roast,
+            <br> allow customers to experience various coffee flavors. 
+            Whether you prefer a smooth and sweet taste <br> or a rich and robust bitterness, you can find your perfect coffee blend at CiTy Coffee.
+            Additionally, <br> we use eco-friendly and renewable materials in our packaging, to achieve sustainability in our operations.
+        </p>
+    </div>
+    
+    <br>
+    <br>
+    <div class="timeline">
+       
+        <div class="container left">
+          <div class="content">
+            <h2>2025</h2>
+            <p>Looking forward to open another location in Vancouver.</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2024</h2>
+            <p>Officially landed in Canada, <br> with the first location in <br> New Westminster.</p>
+          </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+              <h2>2022</h2>
+              <p>Opened over 100 locations<br> around Taiwan.</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+              <h2>2019</h2>
+              <p>Founded frist location in <br> Taipei, Taiwan.</p>
+        </div>
+        
+    </div>
+    <h1>SINCE 2019</h1>
+
+
+
+
+</body>
+<br>
+<footer>
+    <i>Copyright &copy; Yun-Hua, Tai &amp; Peng-Chen, Chiang</i>
+    <h5>How to create a timeline. (n.d.). https://www.w3schools.com/howto/howto_css_timeline.asp</h5>
+</footer>
+
+</html>
